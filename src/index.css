@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Puedes dejar estilos personalizados aquí si los necesitas */
+body {
+  
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradiente-animado {
+  background: linear-gradient(135deg, #002F50, #852BE5, #360F4D);
+  background-size: 400% 400%;
+  animation: gradient-move 8s ease-in-out infinite;
+}
+
+
+@keyframes rotate-gradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
