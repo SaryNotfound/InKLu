@@ -37,7 +37,12 @@ const Register = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradiente-animado font-sans">
-      <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-10">
+      <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-0 flex flex-col items-center">
+        <img
+          src="/inklufnd.png"
+          alt="Logo InKlúIA"
+          className="w-24 h-24 mt-2 mb-0 animate-bounce"
+        />
         <h2 className="text-3xl font-semibold mb-6 text-azulmio text-center">Registro</h2>
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           {/* Correo */}
@@ -50,7 +55,7 @@ const Register = () => {
               value={form.email}
               onChange={handleChange}
               required
-              className="pl-10 p-3 border border-gray-300 rounded-md w-full focus:ring-2 focus:ring-moradomio text-azulmio"
+              className="pl-10 p-3 border border-gray-300 rounded-md w-full   text-azulmio"
             />
           </div>
 
@@ -60,7 +65,7 @@ const Register = () => {
               name="country"
               value={form.country}
               onChange={handleChange}
-              className="px-3 py-3 bg-white text-sm rounded-l-md border border-r-0 border-moradomio text-azulmio"
+              className="px-3 py-3 bg-white text-sm rounded-l-md border border-r-0 border-gray-300 text-azulmio"
             >
               <option value="COL+57">COL+57</option>
               <option value="MEX+52">MEX+52</option>
@@ -75,7 +80,7 @@ const Register = () => {
               placeholder="Número de teléfono"
               value={form.phone}
               onChange={handleChange}
-              className="p-3 w-full border border-moradomio rounded-r-md text-azulmio"
+              className="p-3 w-full border border-gray-300 rounded-r-md text-azulmio"
             />
           </div>
 
